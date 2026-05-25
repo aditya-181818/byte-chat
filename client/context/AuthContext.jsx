@@ -4,7 +4,8 @@ import { useSearchParams } from "react-router-dom";
 import toast from "react-hot-toast";
 import {io} from "socket.io-client"
 
-axios.defaults.baseURL = "https://byte-chat-backend.onrender.com";
+const backendUrl = "https://byte-chat-backend.onrender.com";
+axios.defaults.baseURL = backendUrl;
 
 export const AuthContext = createContext();
 
